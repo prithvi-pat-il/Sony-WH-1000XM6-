@@ -9,8 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#050505",
+        foreground: "#ffffff",
+        "secondary-bg": "#0A0A0C",
+        "sony-blue": "#0050FF",
+        "sony-cyan": "#00D6FF",
+      },
+      fontFamily: {
+        sans: ["var(--font-inter)", "sans-serif"],
       },
     },
   },
