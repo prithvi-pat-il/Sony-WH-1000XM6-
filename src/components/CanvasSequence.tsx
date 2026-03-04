@@ -82,6 +82,7 @@ export default function CanvasSequence() {
         }
 
         return () => window.removeEventListener("resize", resizeCanvas);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [images]);
 
     return (

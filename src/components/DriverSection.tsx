@@ -24,7 +24,6 @@ function StorySection({
     });
 
     const fadeInStart = start;
-    const fadeInEnd = start + 0.05;
     const fadeOutStart = end - 0.05;
     const fadeOutEnd = end;
 
@@ -133,6 +132,7 @@ export default function DriverSection() {
         }
 
         return () => window.removeEventListener("resize", resizeCanvas);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [images]);
 
     return (
