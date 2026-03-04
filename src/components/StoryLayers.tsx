@@ -152,28 +152,28 @@ export default function StoryLayers() {
                 <div className="absolute inset-0 z-10 w-full">
                     {/* 0 - 45% : Hero & Engineering (Simultaneous Left/Right) */}
                     <StorySection targetRef={containerRef} start={0.0} end={0.45} className="items-center justify-center">
-                        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-12 md:gap-24">
+                        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-24 h-full md:h-auto overflow-y-auto md:overflow-visible">
                             {/* Hero (Left) */}
-                            <div className="text-left w-full md:w-1/2 max-w-lg bg-transparent self-start md:self-center">
-                                <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4 drop-shadow-2xl">
+                            <div className="text-center md:text-left w-full md:w-1/2 max-w-lg bg-transparent md:self-center mt-12 md:mt-0">
+                                <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-4 drop-shadow-2xl">
                                     Sony WH-1000XM6
                                 </h1>
-                                <p className="text-xl md:text-3xl font-medium text-white/90 mb-3 drop-shadow-md">Silence, perfected.</p>
-                                <p className="text-base text-white/90 max-w-lg leading-relaxed shadow-black drop-shadow-md border-l-2 border-sony-blue pl-4 bg-black/20 p-2 rounded-r-lg">
+                                <p className="text-lg sm:text-xl md:text-3xl font-medium text-white/90 mb-3 drop-shadow-md">Silence, perfected.</p>
+                                <p className="text-sm sm:text-base text-white/90 max-w-lg leading-relaxed shadow-black drop-shadow-md border-l-2 border-sony-blue pl-4 bg-black/40 md:bg-black/20 p-3 md:p-2 rounded-r-lg mx-auto md:mx-0">
                                     Flagship wireless noise cancelling, re-engineered for a world that never stops.
                                 </p>
                             </div>
 
                             {/* Engineering Reveal (Right) */}
-                            <div className="text-left w-full md:w-1/2 max-w-lg bg-transparent drop-shadow-2xl self-end md:self-center">
-                                <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 bg-gradient-to-b from-white to-sony-cyan/70 bg-clip-text text-transparent pb-1 drop-shadow-xl">
+                            <div className="text-center md:text-left w-full md:w-1/2 max-w-lg bg-transparent drop-shadow-2xl md:self-center mb-12 md:mb-0">
+                                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4 md:mb-6 bg-gradient-to-b from-white to-sony-cyan/70 bg-clip-text text-transparent pb-1 drop-shadow-xl">
                                     Precision-engineered for silence.
                                 </h2>
                                 <div className="space-y-4">
-                                    <p className="text-lg text-white/90 font-medium leading-relaxed drop-shadow-md border-l-2 border-sony-blue pl-4 bg-black/20 p-3 rounded-r-lg">
+                                    <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed drop-shadow-md border-l-2 border-sony-blue pl-4 bg-black/40 md:bg-black/20 p-3 rounded-r-lg mx-auto md:mx-0 text-left">
                                         Custom drivers, sealed acoustic chambers, and optimized airflow deliver studio-grade clarity.
                                     </p>
-                                    <p className="text-base text-white/90 leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] pl-4">
+                                    <p className="text-sm sm:text-base text-white/90 leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] pl-4 text-left">
                                         Every component is tuned for balance, power, and comfort—hour after hour.
                                     </p>
                                 </div>
@@ -183,14 +183,14 @@ export default function StoryLayers() {
 
                     {/* 45 - 90% : Noise Cancelling & Sound (Simultaneous Left/Right) */}
                     <StorySection targetRef={containerRef} start={0.45} end={0.90} className="items-center justify-center">
-                        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-12 md:gap-24">
+                        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-24 h-full md:h-auto overflow-y-auto md:overflow-visible">
                             {/* Noise Cancelling (Left) */}
-                            <div className="text-left w-full md:w-1/2 max-w-lg bg-transparent self-start md:self-center">
-                                <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 bg-gradient-to-b from-white to-sony-cyan/70 bg-clip-text text-transparent pb-1 drop-shadow-xl border-l-2 border-sony-blue pl-4">
+                            <div className="text-center md:text-left w-full md:w-1/2 max-w-lg bg-transparent md:self-center mt-12 md:mt-0">
+                                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4 md:mb-6 bg-gradient-to-b from-white to-sony-cyan/70 bg-clip-text text-transparent pb-1 drop-shadow-xl md:border-l-2 md:border-sony-blue md:pl-4">
                                     Adaptive noise cancelling, redefined.
                                 </h2>
-                                <div className="space-y-4">
-                                    <ul className="text-base md:text-lg text-white/90 leading-relaxed space-y-3 drop-shadow-md pb-2">
+                                <div className="space-y-3 sm:space-y-4">
+                                    <ul className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed space-y-3 drop-shadow-md pb-2 bg-black/40 md:bg-transparent p-4 md:p-0 rounded-lg text-left inline-block">
                                         <li className="flex items-start gap-3">
                                             <div className="w-1.5 h-1.5 rounded-full bg-sony-cyan/70 shadow-[0_0_10px_rgba(0,214,255,0.8)] mt-2 shrink-0" />
                                             <span>Multi-microphone array listens in every direction.</span>
@@ -208,15 +208,15 @@ export default function StoryLayers() {
                             </div>
 
                             {/* Sound & Upscaling (Right) */}
-                            <div className="text-left w-full md:w-1/2 max-w-lg bg-transparent self-end md:self-center">
-                                <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 bg-gradient-to-b from-white to-sony-cyan/70 bg-clip-text text-transparent pb-1 drop-shadow-xl border-l-2 border-white/40 pl-4">
+                            <div className="text-center md:text-left w-full md:w-1/2 max-w-lg bg-transparent md:self-center mb-12 md:mb-0">
+                                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4 md:mb-6 bg-gradient-to-b from-white to-sony-cyan/70 bg-clip-text text-transparent pb-1 drop-shadow-xl md:border-l-2 md:border-white/40 md:pl-4">
                                     Immersive, lifelike sound.
                                 </h2>
                                 <div className="space-y-4">
-                                    <p className="text-lg text-white/90 font-medium leading-relaxed drop-shadow-md">
+                                    <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed drop-shadow-md bg-black/40 md:bg-transparent p-3 md:p-0 rounded-lg text-left md:pl-0">
                                         High-performance drivers unlock detail, depth, and texture in every track.
                                     </p>
-                                    <p className="text-base text-white/90 leading-relaxed drop-shadow-md pl-4">
+                                    <p className="text-sm sm:text-base text-white/90 leading-relaxed drop-shadow-md md:pl-4 text-left p-3 md:p-0">
                                         AI-enhanced upscaling restores clarity to compressed audio, so every note feels alive.
                                     </p>
                                 </div>

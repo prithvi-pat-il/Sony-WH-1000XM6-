@@ -143,48 +143,47 @@ export default function DriverSection() {
                 <div className="absolute inset-0 z-0 flex items-center justify-center bg-[#050505]">
                     <canvas ref={canvasRef} className="w-full h-full block" />
                 </div>
-
-                {/* Overlaid Plate 1 (Left Aligned) */}
-                <StorySection targetRef={sectionRef} start={0} end={0.25} className="items-center justify-start z-20 md:pr-[50%]">
-                    <div className="text-left p-8 relative w-full max-w-lg bg-transparent">
+                {/* Overlaid Plate 1 */}
+                <StorySection targetRef={sectionRef} start={0} end={0.25} className="items-center justify-start z-20">
+                    <div className="text-left bg-black/40 md:bg-transparent p-6 md:p-0 rounded-2xl md:backdrop-blur-none border border-white/10 md:border-none md:pr-[50%] mx-auto md:mx-0 w-[90%] md:w-auto">
                         <div className="text-xs font-semibold tracking-widest text-sony-blue uppercase mb-4 opacity-100 flex items-center gap-2 drop-shadow-md">
                             <span>WH-1000XM6</span>
                             <span className="w-1.5 h-1.5 rounded-full bg-sony-blue" />
                             <span>Specs</span>
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 bg-gradient-to-b from-white to-sony-cyan/70 bg-clip-text text-transparent pb-1 drop-shadow-xl">
+                        <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6 bg-gradient-to-b from-white to-sony-cyan/70 bg-clip-text text-transparent pb-1 drop-shadow-xl">
                             🎧 Driver Details
                         </h2>
-                        <h3 className="text-xl text-white font-semibold mb-2 drop-shadow-md">Driver Unit:</h3>
-                        <p className="text-lg text-white/90 leading-relaxed font-medium drop-shadow-md">
+                        <h3 className="text-lg md:text-xl text-white font-semibold mb-2 drop-shadow-md">Driver Unit:</h3>
+                        <p className="text-base md:text-lg text-white/90 leading-relaxed font-medium drop-shadow-md">
                             30 mm dynamic drivers for rich and detailed sound reproduction.
                         </p>
                     </div>
                 </StorySection>
 
-                {/* Overlaid Plate 2 (Right Aligned) */}
-                <StorySection targetRef={sectionRef} start={0.25} end={0.50} className="items-center justify-end z-20 md:pl-[50%]">
-                    <div className="text-left p-8 relative w-full max-w-lg bg-transparent">
+                {/* Overlaid Plate 2 */}
+                <StorySection targetRef={sectionRef} start={0.25} end={0.50} className="items-center justify-end z-20">
+                    <div className="text-left bg-black/40 md:bg-transparent p-6 md:p-0 rounded-2xl md:backdrop-blur-none border border-white/10 md:border-none md:pl-[50%] mx-auto md:mx-0 w-[90%] md:w-auto">
                         <h3 className="text-3xl md:text-5xl font-bold tracking-tight mb-6 text-white drop-shadow-xl">
                             Dynamic Performance
                         </h3>
-                        <h4 className="text-xl text-white font-semibold mb-2 drop-shadow-md">Driver Type:</h4>
+                        <h4 className="text-lg md:text-xl text-white font-semibold mb-2 drop-shadow-md">Driver Type:</h4>
                         <p className="text-base md:text-lg text-white/90 leading-relaxed border-l-2 border-sony-blue pl-4 drop-shadow-md bg-black/20 p-2 rounded-r-lg">
                             Dynamic driver with neodymium magnet delivering balanced audio across frequencies.
                         </p>
                     </div>
                 </StorySection>
 
-                {/* Overlaid Plate 3 (Left Aligned) */}
-                <StorySection targetRef={sectionRef} start={0.50} end={0.75} className="items-center justify-start z-20 md:pr-[50%]">
-                    <div className="text-left p-8 relative w-full max-w-lg bg-transparent">
+                {/* Overlaid Plate 3 */}
+                <StorySection targetRef={sectionRef} start={0.50} end={0.75} className="items-center justify-start z-20">
+                    <div className="text-left bg-black/40 md:bg-transparent p-6 md:p-0 rounded-2xl md:backdrop-blur-none border border-white/10 md:border-none md:pr-[50%] mx-auto md:mx-0 w-[90%] md:w-auto">
                         <h3 className="text-3xl md:text-5xl font-bold tracking-tight mb-6 text-white border-l-2 border-sony-blue pl-4 drop-shadow-xl">
                             Unparalleled Range
                         </h3>
-                        <div className="space-y-6">
+                        <div className="space-y-4 md:space-y-6">
                             <div>
-                                <h4 className="text-xl text-white font-semibold mb-3 drop-shadow-md">Frequency Response:</h4>
-                                <ul className="text-base md:text-lg text-white/90 leading-relaxed space-y-3 drop-shadow-md">
+                                <h4 className="text-lg md:text-xl text-white font-semibold mb-3 drop-shadow-md">Frequency Response:</h4>
+                                <ul className="text-sm md:text-lg text-white/90 leading-relaxed space-y-3 drop-shadow-md">
                                     <li className="flex items-center gap-3">
                                         <div className="w-1.5 h-1.5 rounded-full bg-sony-cyan/70 shadow-[0_0_10px_rgba(0,214,255,0.8)]" />
                                         <span><strong className="text-white">Wired mode (active):</strong> 4 Hz–40 kHz</span>
@@ -199,21 +198,21 @@ export default function DriverSection() {
                     </div>
                 </StorySection>
 
-                {/* Overlaid Plate 4 (Right Aligned) */}
-                <StorySection targetRef={sectionRef} start={0.75} end={1.0} className="items-center justify-end z-20 md:pl-[50%]">
-                    <div className="text-left p-8 relative w-full max-w-lg bg-transparent">
+                {/* Overlaid Plate 4 */}
+                <StorySection targetRef={sectionRef} start={0.75} end={1.0} className="items-center justify-end z-20">
+                    <div className="text-left bg-black/40 md:bg-transparent p-6 md:p-0 rounded-2xl md:backdrop-blur-none border border-white/10 md:border-none md:pl-[50%] mx-auto md:mx-0 w-[90%] md:w-auto">
                         <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-white border-l-2 border-white/40 pl-4 drop-shadow-xl">
                             Precision Details
                         </h3>
-                        <div className="space-y-4 mb-6 pt-2">
-                            <p className="text-lg text-white/90 drop-shadow-md">
+                        <div className="space-y-3 md:space-y-4 mb-4 md:mb-6 pt-2">
+                            <p className="text-sm md:text-lg text-white/90 drop-shadow-md">
                                 <strong className="text-white">Impedance:</strong> Approx. 48 Ω (active), 16 Ω (passive).
                             </p>
-                            <p className="text-lg text-white/90 drop-shadow-md">
+                            <p className="text-sm md:text-lg text-white/90 drop-shadow-md">
                                 <strong className="text-white">Sensitivity:</strong> ~103 dB /mW.
                             </p>
                         </div>
-                        <p className="text-base text-white/90 leading-relaxed font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                        <p className="text-xs md:text-base text-white/90 leading-relaxed font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                             These high-quality 30 mm drivers ensure powerful bass, clear mids, and detailed highs for an immersive listening experience.
                         </p>
                     </div>
